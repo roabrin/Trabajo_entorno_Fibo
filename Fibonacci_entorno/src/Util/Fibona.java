@@ -1,9 +1,16 @@
 package Util;
 
 public class Fibona {
-	public class Algoritmo {
+	
 
-		public static void fibonacci(int MAX) {
+		
+/**
+ * 
+ * @param MAX Aqui hacemos el metodo fibonacci
+ * @return
+ */
+		
+		public static int fibonacci(int MAX) {
 
 			int firstNumber = 0;
 			int secondNumber = 1;
@@ -12,21 +19,18 @@ public class Fibona {
 			for (int i = 2; i < MAX; i++) {
 
 				fibonacci = firstNumber + secondNumber;
-				System.out.print(fibonacci + " ");
+				
 
 				firstNumber = secondNumber;
 				secondNumber = fibonacci;
 			}
+			return fibonacci;
 		}
-
-		public static void main(String[] args) {
-
-			System.out.println("Print Fibonacci Series Using Iterative Method");
-			int MAX = 15;
-			fibonacci(MAX);
-
-			
-		}
+		/**
+		 * 
+		 * @param fac Esto devuelve el factorial
+		 * @return
+		 */
 		public static int factorial (int fac) {
 			int factor=1;
 			for (int i = 1; i <= fac; i++) {
@@ -34,7 +38,12 @@ public class Fibona {
 	        }
 			return factor;
 		}
-		public boolean esPrimo(int numero) {
+		/**
+		 * 
+		 * @param numero Esto es para averiguar el numero primo
+		 * @return
+		 */
+		public static boolean esPrimo(int numero) {
 		    if (numero <= 1) {
 		        return false;
 		    }
@@ -46,5 +55,5 @@ public class Fibona {
 		    return true;
 		}
 
-	}
+	
 }
